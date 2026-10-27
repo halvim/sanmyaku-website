@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Sanmyaku AI | TRACE</title>
+<meta name="description" content="TRACE makes business decisions on your own rules, and keeps the proof of each one.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fb;--ink:#121722;--muted:#5a6273;--line:#dde2ec;--card:#fff;--blue:#3d55a8;--blue-soft:#e8ecf7;--red:#d8320f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+.logo img{height:50px;display:block}
+nav{display:flex;align-items:center;gap:28px}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--blue);color:#fff!important;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px;transition:background .15s}
+.btn:hover{background:#2e4590}
+.kicker{font:700 12.5px Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+h1{font:400 clamp(40px,6vw,68px)/1.06 Fraunces,Georgia,serif;letter-spacing:-.025em;margin:18px 0 26px;max-width:15ch}
+h2{font:400 clamp(28px,3.6vw,38px)/1.18 Fraunces,Georgia,serif;letter-spacing:-.015em;margin-bottom:32px}
+.hero{padding:80px 0 0}
+.lede{font-size:20px;color:var(--muted);max-width:58ch}
+.lede strong{color:var(--ink);font-weight:500}
+.hero .ctas{margin-top:32px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.hero .ctas span{font-size:14px;color:var(--muted)}
+.ridge{display:block;width:100%;height:200px;margin-top:40px;opacity:.9}
+section{padding:80px 0;border-top:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px}
+.step .n{font:700 13px Inter;color:var(--blue);letter-spacing:.14em}
+.step h3{font:600 21px Inter;margin:10px 0 8px}
+.step p{color:var(--muted);font-size:16px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.why h3{font:600 18px Inter;margin-bottom:6px;display:flex;gap:10px;align-items:center}
+.why h3 i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-size:13px}
+.why p{color:var(--muted);font-size:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.two h2{margin-bottom:0}
+.two p{color:var(--muted);font-size:18px}
+.two p+p{margin-top:14px}
+.cta{background:linear-gradient(135deg,#2a3f8f,#3d55a8 60%,#2f6fb0);color:#fff;border-radius:22px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta h2{color:#fff;margin:10px 0 8px}
+.cta p{color:#d9e1fa}
+.cta .kicker{color:#ffb39f}
+.cta .btn{background:#fff;color:var(--blue)!important;font-size:16px;padding:15px 26px;position:relative}
+.cta svg{position:absolute;right:-10px;bottom:-6px;opacity:.12}
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:800px){
+  .steps,.why,.two{grid-template-columns:1fr}
+  .why{gap:24px}.two{gap:16px}
+  .hero{padding:40px 0 0}
+  nav a:not(.btn){display:none}
+  .logo img{height:40px}
+  .ridge{height:110px;margin-top:32px}
+  .cta{padding:36px 24px}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#"><img src="logo.png" alt="Sanmyaku AI"></a>
+    <nav><a href="#how">How it works</a><a href="#who">Who it's for</a><a class="btn" href="#contact">Contact</a></nav>
+  </header>
+
+  <div class="hero">
+    <div class="kicker">TRACE</div>
+    <h1>Your AI made the call. Can you prove how and why?</h1>
+    <p class="lede"><strong>TRACE makes business decisions on your own rules, and keeps the proof of each one:</strong> what it read, which rule applied, and why it decided. A year later the decision can still be reopened and defended. When the facts aren't there, TRACE says so. It never pretends it knows.</p>
+    <div class="ctas"><a class="btn" href="#contact">Talk to us</a><span>Traceable Reasoning And Conclusion Engine</span></div>
+    <svg class="ridge" viewBox="290 40 1110 320" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><defs><linearGradient id="mg" x1="0" x2="1"><stop offset="0" stop-color="#3a6db0"/><stop offset="1" stop-color="#3d45a8"/></linearGradient><linearGradient id="mv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d55a8" stop-opacity=".22"/><stop offset="1" stop-color="#3d55a8" stop-opacity="0"/></linearGradient></defs><path d="M300 350 L300,350 L380,285 L463,208 L625,235 L797,60 L930,153 L1083,109 L1180,200 L1280,280 L1385,338 L1385 350Z" fill="url(#mv)"/><polyline points="300,350 380,285 463,208 625,235 797,60 930,153 1083,109 1180,200 1280,280 1385,338" fill="none" stroke="url(#mg)" stroke-width="2.2" stroke-linejoin="round"/></svg>
+  </div>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01 &middot; READ</div><h3>Understand the case</h3><p>Language models are used only to interpret text: letters, forms, messages. They don't decide, and TRACE doesn't rely on what they know. Structured data needs no language model at all.</p></div>
+      <div class="step"><div class="n">02 &middot; DECIDE</div><h3>Apply your rules</h3><p>Your firm's own rules make the decision, not a model's best guess. Your expertise, entered once, used every time.</p></div>
+      <div class="step"><div class="n">03 &middot; PROVE</div><h3>Keep the reasoning</h3><p>Each decision is stored with its facts, its rule and its outcome. Years later, it reopens exactly as it was decided.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="why">
+      <div><h3><i>✓</i>Your rules decide</h3><p>Guidelines, terms and exceptions specific to your business, under the edition in force on the day.</p></div>
+      <div><h3><i>?</i>Knows when it can't</h3><p>“Cannot decide yet” is a real answer, with the missing fact named.</p></div>
+      <div><h3><i>↺</i>Proven years later</h3><p>The Record reopens as it was. Nothing is recalculated, no model is asked again.</p></div>
+    </div>
+  </section>
+
+  <section id="who">
+    <div class="two">
+      <h2>Built for the people who own the decision.</h2>
+      <div>
+        <p>Approvals, eligibility, pricing, compliance: wherever a decision has to survive a challenge from a customer, an auditor or a regulator.</p>
+        <p>TRACE runs alongside the systems you already have. Nothing is replaced.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top:0;padding-top:24px">
+    <div class="cta">
+      <div>
+        <div class="kicker">Founding clients</div>
+        <h2>Start with one decision.</h2>
+        <p>We're opening TRACE to a few founding clients. Bring us one decision that matters, and we'll build it on your rules.</p>
+      </div>
+      <a class="btn" href="mailto:contact@sanmyaku.com?subject=TRACE">contact@sanmyaku.com</a>
+      <svg width="380" height="170" viewBox="0 0 380 170" aria-hidden="true"><path d="M0 170 L110 60 L160 96 L240 14 L310 78 L380 50 L380 170Z" fill="#fff"/></svg>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sanmyaku AI Inc. &middot; Calgary, Alberta &middot; &copy; 2026</span>
+    <span>TRACE is built on a private AI architecture developed by Sanmyaku AI.</span>
+  </footer>
+</div>
+</body>
+</html>
